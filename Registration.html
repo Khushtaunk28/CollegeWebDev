@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+</head>
+<body>
+    <div class="Reg-form">
+        <h2>New Registration</h2>
+        <form action="/register" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required><br>
+            <label for="password">Password:</label>
+            <input type="password" name="pass" id="pass" required><br>
+            <label for="age">Age:</label>
+            <input type="text" name="age" id="age" required><br>
+            <select name="country" id="counrty">
+             <option value="country">Country</option>
+             <option value="country">India</option>
+             <option value="country">China</option>
+             <option value="country">Pakistan<option>
+             <option value="country">Bangladesh</option>
+            </select>
+            <select name="state" id="state">
+                <option value="country">State</option>
+                <option value="country">GOA</option>
+                <option value="country">MP</option>
+                <option value="country">KA<option>
+                <option value="country">BR</option>
+               </select>
+               <label for="Sex" >Gender</label>
+               <input type="radio" name="male" id="male" required><br>
+               <label for="Sex" >Male</label>
+               <input type="radio" name="gender" id="gender" required><br>
+
+        </form>
+    </div>
+    
+</body>
+</html>
