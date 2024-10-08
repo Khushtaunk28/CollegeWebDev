@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>prompt() Demo:  </h1>
+        <button onclick="myinput()">Add two numbers</button>
+        <p id="msg"></p>
+        <script>
+            function myinput() {
+                var num1 = prompt("Enter first number: ");
+                var num2 = prompt("Enter second number: ");
+                add(num1,num2);
+            };
+            function add(num1,num2) {
+                alert(Number(num1)+ Number(num2));
+            }
+            document.getElementById("msg") = add(num1,num2);
+        </script>
+    </body>
+</html>

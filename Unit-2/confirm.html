@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>confirm() Demo:  </h1>
+        <button onclick="save()">Save data</button>
+        <p id="msg"></p>
+        <script>
+            function save() {
+                var status;
+                if(confirm("Do you want to save changes?") == true) {
+                    status = "Data saved successfully!";
+                }
+                else {
+                    status = "Save Cancelled"
+                }
+                document.getElementById("msg").innerHTML = status;
+            };
+        </script>
+    </body>
+</html>
