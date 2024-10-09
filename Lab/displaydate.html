@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Date</title>
+</head>
+<body>
+    <h1>prompt() Todays: Date</h1>
+    <button onclick=displayDate()>Dispaly Date</button>
+    <p id="msg"></p>
+    <script>
+        function displayDate(){
+            var today=new Date();
+            var day=today.getDate();
+            alert("Today's Date:"+day)
+            alert("Full day:"+today)
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
