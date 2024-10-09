@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Factorial</title>
+</head>
+<body>
+    <h1>Let's Calculate factorial</h1>
+    <button onclick=myinput()>Give input</button>
+    <p id="msg"></p>
+    <script>
+         function myinput() {
+        var num1 = prompt("Enter a Number");
+        factorial(num1)
+    };
+    function factorial(num){
+     let f=1;
+        for (let i=1;i<=num;i++){
+            f*=i;
+        }
+        alert("factorial="+f)
+    };
+    document.getElementById("msg") =factorial(num);
+</script>    
+</body>
+</html>
