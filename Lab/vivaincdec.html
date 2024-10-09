@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="counter">Counter=:</h1>
+    <button onclick=increment()>Incrementor</button>
+    <button onclick=decrement()>Decreamentor</button>
+    <button onclick=reset()>Reset</button>
+<script>
+
+    let count=0;
+    //alert("0");
+    function increment(){
+        count++;
+        alert(count);
+    }
+    function decrement(){
+        alert(--count);
+    }
+    function reset(){
+        count=0;
+        alert("0")
+    }
+</script>
+
+    
+</body>
+</html>
