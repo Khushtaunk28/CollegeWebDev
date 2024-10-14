@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 250px;
+            height: 400px;
+            background-color: aquamarine;
+            border: 2px solid black;
+            text-align: center;
+            line-height: 20px;
+            font-size: 20px;
+            margin: top 50px;
+            justify-content: space-evenly;
+            flex: auto;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">Hover Or Click it</div>
+
+    <script>
+        const box=document.getElementById("box");
+
+        box.onclick=function(){
+            box.innerHTML="BOX CLICKED";
+            box.style.backgroundColor="blue";
+        }
+
+        box.onmouseover=function(){
+            box.innerHTML="Mouse over";
+            box.style.backgroundColor="yellow";
+        }
+        box.onmouseout=function(){
+            box.innerHTML="MOUSE reset out of the box";
+            box.style.backgroundColor="aquamarine"
+        }
+
+        box.ondblclick=function(){
+            box.innerHTML="Clicked twice"
+            box.style.backgroundColor="red"
+        }
+
+
+    </script>
+
+
+    
+</body>
+</html>

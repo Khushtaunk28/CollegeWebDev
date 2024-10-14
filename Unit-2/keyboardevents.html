@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Events</title>
+</head>
+<body>
+    <h3>Type in the input box to see the key events </h3>
+    <input type="text" id="inputbo" placeholder="Type here">
+    <div id="output">Press any key</div>
+    <script>
+        const inputbox=document.getElementById("inputbo")
+        const output=document.getElementById("output")
+
+        inputbox.onkeydown=function(event){
+            output.innerHTML="Key Down: "+event.key;
+        }
+
+        inputbox.onkeyup=function(event){
+            output.innerHTML="Key UP: "+event.key;
+        }
+        inputbox.onkeypress=function(event){
+            output.innerHTML="Key Press : "+event.key;
+        }
+
+    
+    </script>
+</body>
+</html>

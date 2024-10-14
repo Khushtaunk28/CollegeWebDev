@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Incrementor&Decrementor</title>
 </head>
 <body>
     <h1 id="counter">Counter=:</h1>
+    <p id="msg">0</p>
     <button onclick=increment()>Incrementor</button>
-    <button onclick=decrement()>Decreamentor</button>
+    <button onclick=decrement()>Decrementor</button>
     <button onclick=reset()>Reset</button>
 <script>
     let count=0;
     //alert("0");
     function increment(){
         count++;
-        alert(count);
+        document.getElementById("msg").innerHTML=count;
     }
     function decrement(){
-        alert(--count);
+        --count;
+        document.getElementById("msg").innerHTML=count;
+
     }
     function reset(){
         count=0;
-        alert("0")
+        document.getElementById("msg").innerHTML=count;
     }
 </script>
 
