@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!-- <meta charset="UTF-8"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
 </head>
 <body>
-    <h1>Registration Form</h1>
+    <h1>Registration Form with Validation</h1>
     <form onsubmit="return validateForm()">
-        <label for="name">Name:</label>
+        <label for="name"><b>Name:</b></label>
         <input type="text" id="name" name="name">
         <br><br>
-        <label for="email">Email:</label>
+        <label for="email"><b>Email:</b></label>
         <input type="email" id="email" name="email">
         <br><br>
-        <label for="password">Password:</label>
+        <label for="password"><b>Password:</b></label>
         <input type="password" id="password" name="password">
         <br><br>
-        <label for="mobile">Mobile No:</label>
+        <label for="mobile"><b>Mobile:</b></label>
         <input type="text" id="mobile" name="mobile">
         <br><br>
-        <label for="address">Address:</label>
+        <label for="address"><b>Address:</b></label>
         <input type="text" id="address" name="address">
         <br><br>
-        <button type="submit">Submit</button>
+        <button type="submit"><b>Submit</b></button>
     </form>
     <script>
         function validateForm() {
@@ -72,8 +72,8 @@
             //if (mobile.substring(0,2) !== "91") {
                 //return "Mobile number must start with country code +91(india)";
             //}
-            if(mobile.search(/[!@#$%^&*]/))
-                return "Mobile number should not contain special characters";
+            //if(mobile.search(/[!@#$%^&*]/))
+                //return "Mobile number should not contain special characters";
             return null;
         }
         function validateAddress() {

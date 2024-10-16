@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse-event1</title>
+    <style>
+        #box{
+            width: 250px;
+            height: 400px;
+            background-color: aquamarine;
+            border: 2px solid black;
+            text-align: center;
+            line-height: 20px;
+            font-size: 20px;
+            margin: top 50px;
+            justify-content: space-evenly;
+            flex: auto;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">This is Box</div>
+    <script>
+        const box=document.getElementById("box")
+        box.onclick=function(){
+            box.innerHTML="BOX CLICKED";
+            box.style.backgroundColor="blue";
+        }
+
+
+    </script>
+    
+</body>
+</html>
