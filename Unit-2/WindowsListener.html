@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Event Listener</title>
+</head>
+<body>
+    <h2>Windows Event: Load, Resize and Scroll</h2>
+    <div class="info" id="info">Page Status</div>
+
+    <script>
+        const infoDiv=document.getElementById("info")
+
+        window.addEventListener('load',function(){
+            infoDiv.textContent="Page has fully loaded"
+            infoDiv.style.backgroundColor='blue'
+
+        });
+
+        window.addEventListener('resize',function(){
+            infoDiv.textContent="Page has been resized to width="+ window.innerWidth+"and height="+window.innerHeight
+            infoDiv.style.backgroundColor='yellow'
+
+        });
+
+        window.addEventListener('scroll',function(){
+            infoDiv.textContent="Page has been scrolled"
+            infoDiv.style.backgroundColor='red'
+
+        });
+    </script>
+    
+</body>
+</html>
