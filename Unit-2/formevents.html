@@ -50,6 +50,24 @@
             statusInput.style.color='blue';
         });
 
+        form.addEventListener("submit",function(event){
+            event.preventDefault();
+            const nameValue=nameInput.value;
+            const emailValue=emailInput.value;
+
+            if(nameValue=== "" || emailValue=== ""){
+                statusInput.textContent="Please fill the form"
+                statusInput.style.color= "orange"
+            }
+            statusInput.textContent="Form Filled with name="+nameInput.value+" and email="+emailInput.value
+            statusInput.style.color= "blue"
+
+
+            
+
+
+        });
+
 
 
 
