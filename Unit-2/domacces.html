@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMMMMMM</title>
+</head>
+<body>
+    <h1 id="head">this is head</h1>
+    <p id="content">this is p tag1</p>
+    <p id="content">this is p tag2</p>
+    <p>this is p without id </p>
+    <ul>
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+    </ul>
+    <button id="changetext">Change Text</button>
+
+    <script>
+        const par=document.getElementsByClassName('content')
+        for(let i=0;i<par.length;i++){
+            par[i].style.fontWeight='bold'
+        }
+        const litem=document.getElementsByClassName('li')
+        for(let i=0;i<par.length;i++){
+            litem[i].style.textTransform='upppercase'
+        }
+        
+
+
+
+
+            const n=document.getElementById("changetext")
+            n.style.backgroundColor="green"
+        
+        
+
+    </script>
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!-- Q3. Create a simple quiz app using js,the quiz should contain atleast three question ,each 
+ with mcq options .validate the user answers and display the score at the end(radio button) -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <h1>Answer the Quiz</h1>
+ </head>
+ <body>
+    <ol>
+        <li><b>Question-1</b><br>What is square root of -1? <br>
+            <input type="radio" name="q1" value="a"> 1<br>
+            <input type="radio" name="q1" value="b"> -1<br>
+            <input type="radio" name="q1" value="c"> Infinite<br>
+            <input type="radio" name="q1" value="d"> Imaginary
+        </li>
+        <li><b>Question-2</b><br>What is the capital of India? <br>
+            <input type="radio" name="q2" value="a"> Delhi<br>
+            <input type="radio" name="q2" value="b"> Banglore<br>
+            <input type="radio" name="q2" value="c"> Mumbai<br>
+            <input type="radio" name="q2" value="d"> Kashmir
+        </li>
+        <li><b>Question-3</b><br>What is the full from of CN?<br>
+            <input type="radio" name="q3" value="a">Computer neurology <br>
+            <input type="radio" name="q3" value="b">Computer Networking<br>
+            <input type="radio" name="q3" value="c">Cloud Networking<br>
+            <input type="radio" name="q3" value="d">Computer National <br>
+        </li>
+    </ol>
+    <button onclick="submitQuiz()">Submit</button>
+    <div class="result" id="result"></div>
+    <script>
+        function submitQuiz() {
+            const correctAnswers = {
+                q1: "d",
+                q2: "a",
+                q3: "b"
+            };
+            let score = 0;
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            const q3 = document.querySelector('input[name="q3"]:checked');
+
+            if (q1 && q1.value === correctAnswers.q1) 
+                score++;
+            if (q2 && q2.value === correctAnswers.q2)
+                score++;
+            if (q3 && q3.value === correctAnswers.q3)
+                 score++;
+
+            // Display the result
+            const resultDiv = document.getElementById('result');
+            resultDiv.textContent = `You scored ${score} out of 3.`;
+        }
+    </script>
+
+    
+ </body>
+ </html>

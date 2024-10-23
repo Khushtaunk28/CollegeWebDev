@@ -1,0 +1,41 @@
+ <!--Q1 Write a js program to toggle the visiblity of the paragraph on the 
+ web page when the user clicks a button.The text should be either shown or hidden also the button
+ should display show text or type text based on the current state. -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle paragraph</title>
+</head>
+<body>
+    <button id="togglebutt" onclick="toggPara()">Start</button>
+    <p id="para">Show or hide.</p>
+
+    <script>
+        function toggPara() {
+            const paragraph = document.getElementById('para');
+            const button = document.getElementById('togglebutt');
+
+            if (paragraph.style.display === 'none') {
+                paragraph.style.display = 'block';
+                button.textContent = 'HideText';
+            } else {
+                paragraph.style.display = 'none';
+                button.textContent = 'ShowText';
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+ 
+
+
+ 
+ 
+
+ 
+ 

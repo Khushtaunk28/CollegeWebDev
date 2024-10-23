@@ -1,0 +1,49 @@
+<!-- Q2 dom manipulation -> Write a js program to create a list of items on web page, include button
+ to add new items remove items and create items and clear the entire list.Display the list 
+ directly on the web page as it when the items are added or removed. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListApp</title>
+ </head>
+ <body>
+    <input type="text" placeholder="Enter an item" id="newitem">
+    <button onclick="additem()">Add items</button>
+    <button onclick="clearlist()">Clear List</button>
+    <ul id="itemlist"></ul>
+    <script>
+        function additem(){
+            const item=document.getElementById("newitem")
+            const itemcontent=item.value.trim()
+            if(itemcontent===''){
+                alert("invalid item")
+                return;
+            }
+            const li=document.createElement("li")
+            li.textContent=itemcontent;
+            //remove
+            const rembutton = document.createElement('button');
+            rembutton.textContent = 'Remove';
+            rembutton.style.margin='10px'
+            rembutton.onclick = function() {
+                li.remove();
+            };
+            li.appendChild(rembutton);
+            document.getElementById('itemlist').appendChild(li);
+            item.value='';
+        }
+
+        function clearlist(){
+            const li=document.getElementById("itemlist")
+            li.innerHTML='';
+        }
+
+
+
+    </script>
+    
+
+ </body>
+ </html>
