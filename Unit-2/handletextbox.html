@@ -10,6 +10,7 @@
     <h2>Handle text box</h2>
     <input type="text" name="" id="textbox" onchange="handlebox()" placeholder="Enter the text here">\
     <button onclick="handleButtonClick()">click me</button>
+    
 
 
     <input type="password" id="mypass" oninput="handlePassword()">
@@ -24,11 +25,10 @@
         let password=document.getElementById("mypass").value;
         document.getElementById("passmsg").innerText="Your Password is="+password
     }
-    function handleBodyClick(){
-        alert("Body was clicked")
-    }
+    //function handleBodyClick(){
+        //alert("Body was clicked")
     function handleButtonClick(){
-        alert("Button was clicked")
+        
     }
     </script>
 
