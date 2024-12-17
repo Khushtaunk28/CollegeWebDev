@@ -1,14 +1,22 @@
 import React from "react";
 import ErrorBoundary from "./ErrorBoundary";
 import UserProfile from "./UserProfile";
+import maths from "./maths.js";
+import CityChanger from "./practice.js";
+import AgeUpdater from "./updateAge.js";
+
 const App=()=>{
 const user={ name: "John"};
 return(
     <div>
         <h1>My App</h1>
-        <ErrorBoundary>
-            <UserProfile user={user}/>
-        </ErrorBoundary>
+        <AgeUpdater initialage={21}/>
+       
+        {/* <CityChanger/>
+
+        {/* <ErrorBoundary>
+            
+        </ErrorBoundary> */}
     </div>
 );
 }
