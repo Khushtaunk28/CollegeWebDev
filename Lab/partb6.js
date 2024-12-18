@@ -16,5 +16,4 @@ function DepartmentList() {
     </div>
   );
 }
-
 export default DepartmentList;

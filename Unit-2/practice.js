@@ -15,6 +15,7 @@ class CityChanger extends React.Component{
             this.setState({city:"BLR"});
         },2000);
     }
+    getDeriv
     render(){
         return(
             <h1>City Name: {this .state.city}</h1>
