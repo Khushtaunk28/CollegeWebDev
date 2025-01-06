@@ -9,11 +9,12 @@ import  Suscribe  from "./sections/Suscribe";
 import Nav from "./components/Nav";
 import Services from "./sections/Services";
 
+
 export default function App() {
   return (
    <main className="relative">
     <Nav/>  
-    <section className="xl:padding-1 wide:padding-r padding-b">
+    <section className="xl:padding-l wide:padding-r padding-b">
       <Hero/>   
       </section>
 
