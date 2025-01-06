@@ -8,9 +8,10 @@ const Button = ({label,iconUrl}) => {
     text-lg leading-none bg-coral-red
     rounded-full text-white border-coral-red '> 
         {label}
-        <img src={iconUrl} alt=":>"
+        {iconUrl &&
+        <img src={iconUrl} alt=""
         className='ml-2 rounded-full
-        w-5 h-5' />
+        w-5 h-5' />}
     
     </button>
   )

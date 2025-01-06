@@ -1,7 +1,7 @@
 
 import Hero from "./sections/Hero";
 import PopularProducts from "./sections/PopularProducts";
-import SuperQulaity from "./sections/SuperQulaity";
+import SuperQulaity from "./sections/SuperQuality";
 import  SpecialOffer from "./sections/SpecialOffer";
 import Footer from "./sections/Footer";
 import CustomerReviews from "./sections/CustomerReviews";
