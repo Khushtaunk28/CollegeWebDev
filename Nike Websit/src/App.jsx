@@ -5,7 +5,7 @@ import SuperQulaity from "./sections/SuperQuality";
 import  SpecialOffer from "./sections/SpecialOffer";
 import Footer from "./sections/Footer";
 import CustomerReviews from "./sections/CustomerReviews";
-import  Suscribe  from "./sections/Suscribe";
+import  Suscribe  from "./sections/Subscribe";
 import Nav from "./components/Nav";
 import Services from "./sections/Services";
 
